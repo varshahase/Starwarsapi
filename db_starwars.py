@@ -6,15 +6,15 @@ port: 3306
 database: starwarsDB
 """
 
-import pymysql.cursors
+import pyMySQL.cursors
 
 # Connect to the database
-connection = pymysql.connect(host='127.0.0.1',
+connection = pyMySQL.connect(host='127.0.0.1',
                              user='root',
                              port=3306,
-                             password='Rohit@123',
+                             password='Varsha@1995',
                              database='starwarsDB',
-                             cursorclass=pymysql.cursors.DictCursor)
+                             cursorclass=pyMySQL.cursors.DictCursor)
 cursor=connection.cursor()
 cursor.execute("SHOW DATABASES")
 results=cursor.fetchall()
